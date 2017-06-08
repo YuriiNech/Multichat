@@ -20,7 +20,7 @@ class Privat_Chat_Name(models.Model):
     chat_name = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.message
+        return self.chat_name
 
 
 @python_2_unicode_compatible
@@ -43,7 +43,7 @@ class Privat_Chat_User(models.Model):
     new_message = models.IntegerField(default = 1)
 
     def __str__(self):
-        return self.message
+        return self.user
 
 
 @python_2_unicode_compatible
@@ -53,4 +53,4 @@ class Reply_Channel(models.Model):
     reply_channel = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.message
+        return self.user

@@ -1,5 +1,5 @@
 """
-WSGI config for chat2 project.
+WSGI config for chat4 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
