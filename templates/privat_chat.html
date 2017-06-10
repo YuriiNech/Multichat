@@ -24,8 +24,11 @@
             <!--messages with websockets-->
             var msgArea = $('#msgArea');
             var elementMessage = $('#message');
-
-            var webSocket = new WebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
+            if (window.location.protocol == "https:") {
+              var webSocket = new WebSocket('wss://' + window.location.host + '/chat'+{{chat_id}});
+            } else {
+              var webSocket = new WebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
+            };   
 
             webSocket.onmessage = function(message) {
                 var data = JSON.parse(message.data)
