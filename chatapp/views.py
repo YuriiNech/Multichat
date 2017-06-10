@@ -48,9 +48,7 @@ def chat(request):
 def create_privat_chat(request):
     if not request.user.is_authenticated():
         return redirect('/login')
-    conn = sqlite3.connect('db.sqlite3')
-    cur = conn.cursor()
-    print ("in create_privat_chat")
+
 
     # check for existing chats with the name and userset
     chat_name = request.POST['chat_name']
@@ -70,32 +68,16 @@ def create_privat_chat(request):
                 return exist_chat_id
 
     # create new chat
-    print("chat name = ", chat_name)
     ch = Privat_Chat_Name(chat_name = chat_name)
-    print("chat name = ", chat_name)
     ch.save()
-    print("chat name = ", chat_name)
     ids = Privat_Chat_Name.objects.filter(chat_name=chat_name).values('id')
-    print("ids = id = id = id = id = id = id = id = id = id = ids = ids = ", ids)
     for id in ids:
         chat_id = id['id']
-
-    print("id = id = id = id = id = id = id = id = id = id = id = id = ", id)
 
     for user_id in userset1:
         u = Privat_Chat_User(chat_id=chat_id, user_id=user_id, user_on=0, new_message=1)
         u.save()
 
-    # t = (chat_name,)
-    # cur.execute("INSERT INTO chatapp_privat_chat_name (chat_name) VALUES (?)", t)
-    # conn.commit()
-    # cur.execute("SELECT  id FROM  chatapp_privat_chat_name WHERE rowid = last_insert_rowid()")
-    # chat_id = cur.fetchone()[0]
-    # for user_id in userset1:
-    #     t=(chat_id, user_id, 0, 1)
-    #     cur.execute("INSERT INTO chatapp_privat_chat_user (chat_id, user_id, user_on, new_message) VALUES (?, ?, ?, ?)", t)
-    #     conn.commit()
-    # conn.close()
     return chat_id
 
 
@@ -114,16 +96,6 @@ def get_privat_chat(request):
         chat_name = Privat_Chat_Name.objects.filter(id = chat['chat_id']).values('chat_name')
         chatset.append((chat['chat_id'], chat_name[0]['chat_name'], chat['new_message']))
 
-    # print('chatset =                        ', chatset)
-    # conn = sqlite3.connect('db.sqlite3')
-    # cur = conn.cursor()
-    #
-    # t = (int(user_id),)
-    # cur.execute("SELECT chat_id, chat_name, new_message FROM  chatapp_privat_chat_user, chatapp_privat_chat_name "
-    #             "WHERE chatapp_privat_chat_user.chat_id = chatapp_privat_chat_name.id AND "
-    #             "chatapp_privat_chat_user.user_id = ?", t)
-    # chatset = cur.fetchall()
-    # print('chatset =          ', chatset)
     data = {"log": request.user.is_authenticated(), "username":request.user.username,
             "userset":userset, "chatset":chatset, "chat":1}
 
