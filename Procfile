@@ -1,1 +1,1 @@
-web: gunicorn Multichat.wsgi --log-file -
+web: gunicorn chatproject.wsgi --log-file -
