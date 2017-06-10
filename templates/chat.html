@@ -7,8 +7,11 @@
         $(document).ready(function(){
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
-
-            var webSocket = new WebSocket('ws://' + window.location.host + '/chat');
+            if (window.location.protocol == "https:") {
+              var webSocket = new WebSocket('wss://' + window.location.host + '/chat');
+            } else {
+              var webSocket = new WebSocket('ws://' + window.location.host + '/chat');
+            };            
 
             webSocket.onmessage = function(message) {
                 var data = JSON.parse(message.data)
