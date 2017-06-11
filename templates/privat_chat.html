@@ -99,6 +99,7 @@
                 event.preventDefault();
 
                 data = {"chat_id":chat_id}
+                alert (chat_id);
                 jQuery.post("/show/",data, function(users){
 
                     users.forEach(function(user, i, users) {
