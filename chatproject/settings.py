@@ -45,13 +45,20 @@ INSTALLED_APPS = [
 
 CHANNEL_LAYERS = {
     'default': {
-        'BACKEND': 'asgi_redis.RedisChannelLayer',
-        'CONFIG': {
-            'hosts': [('localhost', 6379)],
-        },
+        'BACKEND': 'asgiref.inmemory.ChannelLayer',
         'ROUTING': 'chatproject.routing.channel_routing',
     },
 }
+
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'asgi_redis.RedisChannelLayer',
+#         'CONFIG': {
+#             'hosts': [('localhost', 6379)],
+#         },
+#         'ROUTING': 'chatproject.routing.channel_routing',
+#     },
+# }
 
 
 MIDDLEWARE = [
