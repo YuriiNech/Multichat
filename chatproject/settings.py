@@ -50,9 +50,9 @@ INSTALLED_APPS = [
 #     },
 # }
 
-import urlparse2
+from urllib.parse import urlparse
 
-redis_url = urlparse2.urlparse(os.environ.get('REDIS_URL'))
+redis_url = urlparse(os.environ.get('REDIS_URL'))
 # CACHES = {
 #     "default": {
 #          "BACKEND": "redis_cache.RedisCache",
