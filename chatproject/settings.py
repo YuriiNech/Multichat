@@ -50,10 +50,9 @@ INSTALLED_APPS = [
 #     },
 # }
 
-# import os
-# import urlparse
+import urlparse
 
-# redis_url = urlparse.urlparse(os.environ.get('REDIS_URL'))
+redis_url = urlparse.urlparse(os.environ.get('REDIS_URL'))
 # CACHES = {
 #     "default": {
 #          "BACKEND": "redis_cache.RedisCache",
@@ -69,7 +68,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'asgi_redis.RedisChannelLayer',
         'CONFIG': {
-            'hosts': [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
+            'hosts': [(redis_url.hostname, redis_url.port)] #[os.environ.get('REDIS_URL', 'redis://localhost:6379')],
         },
         'ROUTING': 'chatproject.routing.channel_routing',
     },
