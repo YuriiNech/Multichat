@@ -11,7 +11,7 @@ import sqlite3
 
 @channel_session_user_from_http
 def ws_connect(message):
-#     log.debug('now in cconsumers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    print('now in cconsumers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     # accept reply_channel
     message.reply_channel.send({'accept': True})
 
