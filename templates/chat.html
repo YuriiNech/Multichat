@@ -8,9 +8,9 @@
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
             if (window.location.protocol == "https:") {
-              var webSocket = new WebSocket('wss://' + window.location.host + '/chat');
+              var webSocket = new ReconnectingWebSocket('wss://' + window.location.host + '/chat');
             } else {
-              var webSocket = new WebSocket('ws://' + window.location.host + '/chat');
+              var webSocket = new ReconnectingWebSocket('ws://' + window.location.host + '/chat');
             };            
 
             webSocket.onmessage = function(message) {
