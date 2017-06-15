@@ -1,8 +1,12 @@
-from channels.routing import route
+# from channels.routing import route
+from channels.staticfiles import StaticFilesConsumer
+from .chatapp import consumers
 
 channel_routing ={
-    'websocket.connect': 'chatapp.consumers.ws_connect',
-    'websocket.receive': 'chatapp.consumers.ws_message',
-    'websocket.disconnect': 'chatapp.consumers.ws_disconnect',
+    'http.request': StaticFilesConsumer(),
+
+    'websocket.connect': consumers.ws_connect,
+    'websocket.receive': consumers.ws_message,
+    'websocket.disconnect': consumers.ws_disconnect,
 
 }
