@@ -6,12 +6,12 @@ from django.contrib.auth.models import User, Group
 from channels.channel import Group, Channel
 from channels.auth import channel_session_user_from_http, channel_session_user
 import sqlite3
-import logging
-log = logging.getLogger(__name__)
+# import logging
+# log = logging.getLogger(__name__)
 
 @channel_session_user_from_http
 def ws_connect(message):
-    log.debug('now in cconsumers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+#     log.debug('now in cconsumers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     # accept reply_channel
     message.reply_channel.send({'accept': True})
 
