@@ -41,7 +41,7 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
-    log.debug('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+#     log.debug('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
 
