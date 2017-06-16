@@ -133,9 +133,9 @@ def ws_message(message):
 #                 print("ERROR Channel name must be a valid unicode string" )
 
 
-#     Group(path).send({'text': json.dumps({'message': message.content['text'],
-#                                             'username': message.user.username,
-#                                             'time': datetime.strftime(datetime.now(), "%d.%m.%y %H:%M:%S")})})
+    Group(path).send({'text': json.dumps({'message': message.content['text'],
+                                            'username': message.user.username,
+                                            'time': datetime.strftime(datetime.now(), "%d.%m.%y %H:%M:%S")})})
 
 #     conn.close()
 
