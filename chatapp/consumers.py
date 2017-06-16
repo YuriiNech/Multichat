@@ -5,6 +5,7 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from channels.channel import Group, Channel
 from channels.auth import channel_session_user_from_http, channel_session_user
+from channels.sessions import channel_session
 import sqlite3
 # import logging
 # log = logging.getLogger(__name__)
@@ -132,9 +133,9 @@ def ws_message(message):
 #                 print("ERROR Channel name must be a valid unicode string" )
 
 
-    Group(path).send({'text': json.dumps({'message': message.content['text'],
-                                            'username': message.user.username,
-                                            'time': datetime.strftime(datetime.now(), "%d.%m.%y %H:%M:%S")})})
+#     Group(path).send({'text': json.dumps({'message': message.content['text'],
+#                                             'username': message.user.username,
+#                                             'time': datetime.strftime(datetime.now(), "%d.%m.%y %H:%M:%S")})})
 
 #     conn.close()
 
