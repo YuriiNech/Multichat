@@ -25,9 +25,10 @@
             var msgArea = $('#msgArea');
             var elementMessage = $('#message');
             if (window.location.protocol == "https:") {
-              var webSocket = new ReconnectingWebSocket('wss://' + window.location.host + '/chat'+{{chat_id}});
+              var webSocket = new WebSocket('wss://' + window.location.host + '/chat'+{{chat_id}}); 
+//               var webSocket = new ReconnectingWebSocket('wss://' + window.location.host + '/chat'+{{chat_id}});
             } else {
-              var webSocket = new ReconnectingWebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
+              var webSocket = new WebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
             };   
 
             webSocket.onmessage = function(message) {
