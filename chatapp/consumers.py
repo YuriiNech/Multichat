@@ -28,19 +28,23 @@ def ws_connect(message):
 
     else:
         # get id of privat chat
-        chat_id = int(path[4:])
-
-        # set user_on = true and new_message = false in chat with correct chat_id
+        chat_id = int(path[4:])        
         user_id = message.user.id
+        
+        # check of reconnecting.
+        rec = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id).filter(user_on=1).count()
+        if not rec:
+            # set user_on = true and new_message = false in chat with correct chat_id
+            u = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id)
+            for ob in u:
+                ob.new_message = 0
+                ob.user_on = 1
+                ob.save()
 
-        u = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id)
-        for ob in u:
-            ob.new_message = 0
-            ob.user_on = 1
-            ob.save()
-
-        # search for messages in correct chat_id
-        results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
+            # search for messages in correct chat_id
+            results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message')
+            
+#     rec = Reply_Channel.objects.filter(user_id=user_id)
 
     # send massages from DB
     for res in results:
