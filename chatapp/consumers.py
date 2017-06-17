@@ -1,4 +1,4 @@
-aimport json
+import json
 import time
 from datetime import datetime
 from django.core.mail import send_mail
