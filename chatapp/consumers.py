@@ -29,35 +29,36 @@ def ws_connect(message):
     else:
         # get id of privat chat
         chat_id = int(path[4:])        
-        user_id = message.user.id
+        user_id = message.user.id        
         
-        # check of reconnecting.
-        rec = Reconnect.objects.filter(user_id=user_id).count()
-        if not rec:
-            # set user_on = true and new_message = false in chat with correct chat_id
-            u = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id)
-            for ob in u:
-                ob.new_message = 0
-                ob.user_on = 1
-                ob.save()
+        # set user_on = true and new_message = false in chat with correct chat_id
+        u = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id)
+        for ob in u:
+            ob.new_message = 0
+            ob.user_on = 1
+            ob.save()
 
-            # search for messages in correct chat_id
-            results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
+        # search for messages in correct chat_id
+        results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
             
-#     rec = Reply_Channel.objects.filter(user_id=user_id)
+    # check of reconnecting.
+    if request.user.is_authenticated():
+        rec = Reconnect.objects.filter(user_id=user_id).count()
+    else:
+        rec = 0
+    if not rec:
+        # send massages from DB
+        for res in results:
 
-    # send massages from DB
-    for res in results:
+            try:
+                # time = datetime.strptime(res[2].rpartition('.')[0], "%Y-%m-%d %H:%M:%S")
+                time = datetime.strftime(res['time'], "%d.%m.%y %H:%M:%S")
+            except:
+                time = res['time']
 
-        try:
-            # time = datetime.strptime(res[2].rpartition('.')[0], "%Y-%m-%d %H:%M:%S")
-            time = datetime.strftime(res['time'], "%d.%m.%y %H:%M:%S")
-        except:
-            time = res['time']
-
-        message.reply_channel.send({'text': json.dumps({'message': res['message'],
-                                                'username': res['username'],
-                                                'time': time})})
+            message.reply_channel.send({'text': json.dumps({'message': res['message'],
+                                                    'username': res['username'],
+                                                    'time': time})})
     rec = Reconnect(user_id=user_id)
     rec.save()
     if not message.user.id:
