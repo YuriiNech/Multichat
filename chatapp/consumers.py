@@ -32,7 +32,7 @@ def ws_connect(message):
         user_id = message.user.id
         
         # check of reconnecting.
-        rec = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id).filter(user_on=1).count()
+        rec = Reconnect.objects.filter(user_id=user_id).count()
         if not rec:
             # set user_on = true and new_message = false in chat with correct chat_id
             u = Privat_Chat_User.objects.filter(chat_id=chat_id).filter(user_id=user_id)
@@ -58,7 +58,8 @@ def ws_connect(message):
         message.reply_channel.send({'text': json.dumps({'message': res['message'],
                                                 'username': res['username'],
                                                 'time': time})})
-
+    rec = Reconnect(user_id=user_id)
+    rec.save()
     if not message.user.id:
         return
 
