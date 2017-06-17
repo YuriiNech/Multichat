@@ -1,4 +1,4 @@
-import json
+aimport json
 import time
 from datetime import datetime
 from django.core.mail import send_mail
@@ -42,10 +42,10 @@ def ws_connect(message):
         results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
             
     # check of reconnecting.
-    if request.user.is_authenticated():
-        rec = Reconnect.objects.filter(user_id=user_id).count()
-    else:
-        rec = 0
+#     if message.user.is_authenticated():
+#         rec = Reconnect.objects.filter(user_id=user_id).count()
+#     else:
+#         rec = 0
     rec = 0
     if not rec:
         # send massages from DB
@@ -60,12 +60,12 @@ def ws_connect(message):
             message.reply_channel.send({'text': json.dumps({'message': res['message'],
                                                     'username': res['username'],
                                                     'time': time})})
-#     if request.user.is_authenticated():
-#         rec = Reconnect(user_id=request.user.id, rec=1)
-#         rec.save()
+    
+        
     if not message.user.id:
         return
-
+    rec = Reconnect(user_id=message.user.id, rec=1)
+    rec.save()
     # add reply_channel for user in DB
     user_id = message.user.id
 
