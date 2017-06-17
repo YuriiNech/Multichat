@@ -54,3 +54,13 @@ class Reply_Channel(models.Model):
 
     def __str__(self):
         return self.user
+    
+    
+@python_2_unicode_compatible
+class Reconnect(models.Model):
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    reconnect = models.IntegerField(default = 0)
+
+    def __str__(self):
+        return self.user
