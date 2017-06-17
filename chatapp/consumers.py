@@ -59,8 +59,9 @@ def ws_connect(message):
             message.reply_channel.send({'text': json.dumps({'message': res['message'],
                                                     'username': res['username'],
                                                     'time': time})})
-    rec = Reconnect(user_id=user_id)
-    rec.save()
+    if request.user.is_authenticated():
+        rec = Reconnect(user_id=request.user.id, rec=1)
+        rec.save()
     if not message.user.id:
         return
 
