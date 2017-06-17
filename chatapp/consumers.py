@@ -40,7 +40,7 @@ def ws_connect(message):
             ob.save()
 
         # search for messages in correct chat_id
-        results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message')
+        results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
 
     # send massages from DB
     for res in results:
