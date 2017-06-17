@@ -60,7 +60,7 @@ class Reply_Channel(models.Model):
 class Reconnect(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    rec = models.IntegerField(default = 1)
+    rec = models.IntegerField()
     
     def __str__(self):
         return self.user
