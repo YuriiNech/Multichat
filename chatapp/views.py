@@ -42,7 +42,7 @@ def change_password(request):
 
 def chat(request):
     print('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-    Reconnect.objects.filter(user_id=request.user.id).delete()
+#     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
 
@@ -126,20 +126,6 @@ def leave_chat(request):
             if c:
                 privat_Chat.objects.filter(chat_id = chat_id).delete() 
                 privat_Chat_Name.objects.filter(id = chat_id).delete()
-#             conn = sqlite3.connect('db.sqlite3')
-#             cur = conn.cursor()
-#             t = (int(chat_id),int(user_id),)            
-#             cur.execute("DELETE FROM chatapp_privat_chat_user WHERE chat_id = ? AND user_id = ?", t)
-#             conn.commit()
-#             t = (int(chat_id), )
-#             cur.execute("SELECT user_id FROM chatapp_privat_chat_user WHERE chat_id = ? ", t)
-#             id = cur.fetchone()
-#             if not id :
-#                 cur.execute("DELETE FROM chatapp_privat_chat WHERE chat_id = ?", t)
-#                 conn.commit()
-#                 cur.execute("DELETE FROM chatapp_privat_chat_name WHERE id = ?", t)
-#                 conn.commit()
-#             conn.close()
 
         except:
 
@@ -174,7 +160,7 @@ def privat_chat(request):
             chat_id = create_privat_chat(request)
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
-        Reconnect.objects.filter(user_id=request.user.id).delete()
+#         Reconnect.objects.filter(user_id=request.user.id).delete()
         return render(request, 'privat_chat.html', data)
     # # Is access allowed?
     # conn = sqlite3.connect('db.sqlite3')
