@@ -74,6 +74,8 @@ def ws_connect(message):
 
     # check for new messages in other chats
     results = Privat_Chat_User.objects.filter(user_id = user_id).filter(new_message=1).count()
+    print("results-----------------------------------------------------------------------------------", results)
+    results = 1
     if (results):
 
         Channel(message.reply_channel.name).send({'text': json.dumps({'message': "New message in another private chat",
