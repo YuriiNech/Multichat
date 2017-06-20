@@ -59,7 +59,7 @@ class Reply_Channel(models.Model):
 @python_2_unicode_compatible
 class Reconnect(models.Model):
 
-    user = models.IntegerField()
+    user_id = models.IntegerField()
     rec = models.IntegerField()
     
     def __str__(self):
