@@ -64,8 +64,8 @@ def ws_connect(message):
         
     if not message.user.id:
         return
-    rec = Reconnect(user_id=message.user.id, rec=1)
-    rec.save()
+#     rec = Reconnect(user_id=message.user.id, rec=1)
+#     rec.save()
     # add reply_channel for user in DB
     user_id = message.user.id
 
