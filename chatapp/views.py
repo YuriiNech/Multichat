@@ -5,7 +5,7 @@ from django.contrib.auth import login, logout, authenticate
 import sqlite3
 import time
 from django.http import JsonResponse
-from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel
+from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
 from datetime import datetime, timedelta
 
 def accounts(request):
