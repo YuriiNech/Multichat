@@ -42,7 +42,7 @@ def change_password(request):
 
 def chat(request):
     print('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-#     Reconnect.objects.filter(user_id=request.user.id).delete()
+    Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
 
@@ -160,7 +160,7 @@ def privat_chat(request):
             chat_id = create_privat_chat(request)
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
-#         Reconnect.objects.filter(user_id=request.user.id).delete()
+        Reconnect.objects.filter(user_id=request.user.id).delete()
         return render(request, 'privat_chat.html', data)
     # # Is access allowed?
     # conn = sqlite3.connect('db.sqlite3')
