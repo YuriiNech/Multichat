@@ -43,7 +43,8 @@ def ws_connect(message):
             
     # check of reconnecting. Avoid duplication of messages
     if message.user.is_authenticated():
-        rec = Reconnect.objects.filter(user_id=message.user.id).count()
+        user_id = int(message.user.id)
+        rec = Reconnect.objects.filter(user_id=user_id).count()
     else:
         rec = 0
    
@@ -64,11 +65,12 @@ def ws_connect(message):
         
     if not message.user.id:
         return
-    rec = Reconnect(user_id=message.user.id, rec=1)
-    rec.save()
-    # add reply_channel for user in DB
+    
     user_id = int(message.user.id)
-
+    rec = Reconnect(user_id=user_id, rec=1)
+    rec.save()
+    
+    # add reply_channel for user in DB  
     u = Reply_Channel(user_id=user_id, reply_channel=message.reply_channel.name)
     u.save()
 
