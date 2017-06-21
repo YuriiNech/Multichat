@@ -6,7 +6,7 @@ from django.contrib.auth.models import User, Group
 from channels.channel import Group, Channel
 from channels.auth import channel_session_user_from_http, channel_session_user
 import sqlite3
-from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel
+from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
 
 
 @channel_session_user_from_http
