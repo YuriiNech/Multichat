@@ -62,8 +62,18 @@ def ws_connect(message):
                                                     'username': res['username'],
                                                     'time': time})})
     
-        
-    if not message.user.id:
+        if not message.user.is_authenticated():
+            return
+        # check for new messages in other chats
+        results = Privat_Chat_User.objects.filter(user_id = user_id).filter(new_message=1).count()
+        print("results-----------------------------------------------------------------------------------", results)
+        if (results):
+
+            Channel(message.reply_channel.name).send({'text': json.dumps({'message': "New message in another private chat",
+                                                          'username': " - ",
+                                                          'time': 0})})
+    
+    if not message.user.is_authenticated():
         return
     
     user_id = int(message.user.id)
@@ -74,15 +84,7 @@ def ws_connect(message):
     u = Reply_Channel(user_id=user_id, reply_channel=message.reply_channel.name)
     u.save()
 
-    # check for new messages in other chats
-    results = Privat_Chat_User.objects.filter(user_id = user_id).filter(new_message=1).count()
-    print("results-----------------------------------------------------------------------------------", results)
-    if (results):
-
-        Channel(message.reply_channel.name).send({'text': json.dumps({'message': "New message in another private chat",
-                                                      'username': " - ",
-                                                      'time': 0})})
-
+   
 
 @channel_session_user
 def ws_message(message):
