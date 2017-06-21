@@ -41,12 +41,12 @@ def ws_connect(message):
         # search for messages in correct chat_id
         results = Privat_Chat.objects.filter(chat_id = chat_id).values('time', 'username', 'message').order_by('time')
             
-    # check of reconnecting.
-#     if message.user.is_authenticated():
-#         rec = Reconnect.objects.filter(user_id=user_id).count()
-#     else:
-#         rec = 0
-    rec = 0
+    # check of reconnecting. Avoid duplication of messages
+    if message.user.is_authenticated():
+        rec = Reconnect.objects.filter(user_id=user_id).count()
+    else:
+        rec = 0
+   
     if not rec:
         # send massages from DB
         for res in results:
@@ -64,8 +64,8 @@ def ws_connect(message):
         
     if not message.user.id:
         return
-#     rec = Reconnect(user_id=message.user.id, rec=1)
-#     rec.save()
+    rec = Reconnect(user_id=message.user.id, rec=1)
+    rec.save()
     # add reply_channel for user in DB
     user_id = message.user.id
 
@@ -75,7 +75,6 @@ def ws_connect(message):
     # check for new messages in other chats
     results = Privat_Chat_User.objects.filter(user_id = user_id).filter(new_message=1).count()
     print("results-----------------------------------------------------------------------------------", results)
-    results = 1
     if (results):
 
         Channel(message.reply_channel.name).send({'text': json.dumps({'message': "New message in another private chat",
