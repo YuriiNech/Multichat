@@ -43,7 +43,7 @@ def ws_connect(message):
             
     # check of reconnecting. Avoid duplication of messages
     if message.user.is_authenticated():
-        rec = Reconnect.objects.filter(user_id=user_id).count()
+        rec = Reconnect.objects.filter(user_id=message.user.id).count()
     else:
         rec = 0
    
