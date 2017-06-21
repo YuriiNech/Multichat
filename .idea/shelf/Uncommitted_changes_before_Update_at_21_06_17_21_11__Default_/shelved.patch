@@ -1,0 +1,575 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"259404e2-dc2f-440a-a78c-3c910e20b447\" name=\"Default\" comment=\"\">\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/.idea/chat4.iml\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/Procfile\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/app.json\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/__init__.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/admin.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/apps.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/consumers.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/migrations/0001_initial.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/migrations/__init__.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/models.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/tests.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatapp/views.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatproject/local_settings.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatproject/routing.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatproject/settings.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatproject/urls.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/chatproject/wsgi.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/installation.txt\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/manage.py\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/requirements.txt\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/runtime.txt\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/static/bootstrap.min.js\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/static/html5shiv.js\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/static/jquery-3.1.1.min.js\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/static/respond.min.js\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/static/styles.css\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/base.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/change_password.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/chat.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/clear_db.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/get_privat_chat.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/privat_chat.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/register.html\" />\n      <change type=\"NEW\" beforePath=\"\" afterPath=\"$PROJECT_DIR$/templates/registration/login.html\" />\n    </list>\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"default_target\" />\n  <component name=\"FileEditorManager\">\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n      <file leaf-file-name=\"Procfile\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/Procfile\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"16\">\n              <caret line=\"1\" column=\"0\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"0\" selection-end-line=\"1\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"app.json\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/app.json\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"16\">\n              <caret line=\"1\" column=\"21\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"21\" selection-end-line=\"1\" selection-end-column=\"21\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"chat.html\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/templates/chat.html\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"624\">\n              <caret line=\"39\" column=\"71\" lean-forward=\"false\" selection-start-line=\"39\" selection-start-column=\"68\" selection-end-line=\"39\" selection-end-column=\"93\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"runtime.txt\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/runtime.txt\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"16\">\n              <caret line=\"1\" column=\"0\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"0\" selection-end-line=\"1\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"requirements.txt\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/requirements.txt\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"0\">\n              <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"local_settings.py\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/chatproject/local_settings.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"-52\">\n              <caret line=\"28\" column=\"0\" lean-forward=\"false\" selection-start-line=\"28\" selection-start-column=\"0\" selection-end-line=\"28\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"settings.py\" pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/chatproject/settings.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"432\">\n              <caret line=\"147\" column=\"0\" lean-forward=\"true\" selection-start-line=\"147\" selection-start-column=\"0\" selection-end-line=\"147\" selection-end-column=\"0\" />\n              <folding>\n                <element signature=\"e#307#316#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"routing.py\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/chatproject/routing.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"0\">\n              <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"wsgi.py\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/chatproject/wsgi.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"272\">\n              <caret line=\"19\" column=\"0\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"0\" selection-end-line=\"19\" selection-end-column=\"0\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"urls.py\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/chatproject/urls.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"0\">\n              <caret line=\"0\" column=\"8\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"8\" selection-end-line=\"0\" selection-end-column=\"8\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"PUSH_TAGS\">\n      <GitPushTagMode>\n        <option name=\"argument\" value=\"--follow-tags\" />\n        <option name=\"title\" value=\"Current Branch\" />\n      </GitPushTagMode>\n    </option>\n    <push-targets>\n      <push-target-info target-remote=\"Multichat5\" target-branch=\"master\" repo=\"$PROJECT_DIR$\" source=\"master\" />\n    </push-targets>\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/templates/privat_chat.html\" />\n        <option value=\"$PROJECT_DIR$/static/bootstrap.css\" />\n        <option value=\"$PROJECT_DIR$/templates/base.html\" />\n        <option value=\"$PROJECT_DIR$/templates/chat.html\" />\n        <option value=\"$PROJECT_DIR$/chatapp/consumers.py\" />\n        <option value=\"$PROJECT_DIR$/templates/change_password.html\" />\n        <option value=\"$PROJECT_DIR$/templates/get_privat_chat.html\" />\n        <option value=\"$PROJECT_DIR$/chatproject/urls.py\" />\n        <option value=\"$PROJECT_DIR$/chatapp/models.py\" />\n        <option value=\"$PROJECT_DIR$/chatapp/views.py\" />\n        <option value=\"$PROJECT_DIR$/runtime.txt\" />\n        <option value=\"$PROJECT_DIR$/chatproject/wsgi.py\" />\n        <option value=\"$PROJECT_DIR$/Procfile\" />\n        <option value=\"$PROJECT_DIR$/chatproject/local_settings.py\" />\n        <option value=\"$PROJECT_DIR$/app.json\" />\n        <option value=\"$PROJECT_DIR$/chatproject/settings.py\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\">\n    <option name=\"x\" value=\"-4\" />\n    <option name=\"y\" value=\"-4\" />\n    <option name=\"width\" value=\"1032\" />\n    <option name=\"height\" value=\"748\" />\n  </component>\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectView\">\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\">\n      <flattenPackages />\n      <showMembers />\n      <showModules />\n      <showLibraryContents />\n      <hideEmptyPackages />\n      <abbreviatePackageNames />\n      <autoscrollToSource />\n      <autoscrollFromSource />\n      <sortByType />\n      <manualOrder />\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scratches\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"templates\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"static\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"Multichat5\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"chatproject\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n        </subPane>\n      </pane>\n      <pane id=\"Scope\" />\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"D:\\PythonProjects\\chat4\\chatproject\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Python docs.docutils task in db.sqlite3\">\n    <configuration default=\"false\" name=\"docutils task in db.sqlite3\" type=\"docs\" factoryName=\"Docutils task\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <option name=\"docutils_input_file\" value=\"$PROJECT_DIR$/db.sqlite3\" />\n      <option name=\"docutils_output_file\" value=\"$PROJECT_DIR$/db.html\" />\n      <option name=\"docutils_params\" value=\"\" />\n      <option name=\"docutils_task\" value=\"rst2html\" />\n      <option name=\"docutils_open_in_browser\" value=\"true\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"PythonConfigurationType\" factoryName=\"Python\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"Tox\" factoryName=\"Tox\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"docs\" factoryName=\"Docutils task\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <option name=\"docutils_input_file\" value=\"\" />\n      <option name=\"docutils_output_file\" value=\"\" />\n      <option name=\"docutils_params\" value=\"\" />\n      <option name=\"docutils_task\" value=\"\" />\n      <option name=\"docutils_open_in_browser\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Doctests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <option name=\"SCRIPT_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_SCRIPT\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"tests\" factoryName=\"Unittests\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"chat4\" />\n      <option name=\"_new_additionalArguments\" value=\"&quot;&quot;\" />\n      <option name=\"_new_target\" value=\"&quot;.&quot;\" />\n      <option name=\"_new_targetType\" value=\"&quot;PATH&quot;\" />\n      <method />\n    </configuration>\n    <list size=\"1\">\n      <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python docs.docutils task in db.sqlite3\" />\n    </list>\n    <recent_temporary>\n      <list size=\"1\">\n        <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python docs.docutils task in db.sqlite3\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"ShelveChangesManager\" show_recycled=\"false\">\n    <option name=\"remove_strategy\" value=\"false\" />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"259404e2-dc2f-440a-a78c-3c910e20b447\" name=\"Default\" comment=\"\" />\n      <created>1496085029224</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1496085029224</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"changed for heroku\">\n      <created>1496951477828</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1496951477828</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"changed Procfile\">\n      <created>1497093212194</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1497093212194</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"changed Procfile\">\n      <created>1497093576933</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1497093576933</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"changed settings.py\">\n      <created>1497095110737</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1497095110737</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"changed settings.py\">\n      <created>1497095417796</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1497095417796</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-4\" y=\"-4\" width=\"1032\" height=\"748\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" show_stripe_button=\"true\" weight=\"0.25967413\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"10\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.51171875\" order=\"0\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Python Console\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Terminal\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3264\" sideWeight=\"0.48828125\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"7\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Data View\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"8\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"9\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n    </layout>\n    <layout-to-restore>\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"10\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"8\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.51171875\" order=\"0\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"9\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Python Console\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Terminal\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" show_stripe_button=\"true\" weight=\"0.3264\" sideWeight=\"0.48828125\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" show_stripe_button=\"true\" weight=\"0.25967413\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.3287037\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"7\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Data View\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n    </layout-to-restore>\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"changed for heroku\" />\n    <MESSAGE value=\"changed Procfile\" />\n    <MESSAGE value=\"changed settings.py\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"changed settings.py\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager />\n    <watches-manager />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/chatapp/apps.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/admin.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/migrations/0001_initial.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"880\">\n          <caret line=\"55\" column=\"24\" lean-forward=\"false\" selection-start-line=\"55\" selection-start-column=\"24\" selection-end-line=\"55\" selection-end-column=\"24\" />\n          <folding>\n            <element signature=\"e#0#28#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$USER_HOME$/liveblog/Lib/site-packages/django/contrib/auth/models.py\" />\n    <entry file=\"file://$PROJECT_DIR$/chatproject/settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"16\">\n          <caret line=\"1\" column=\"25\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"25\" selection-end-line=\"1\" selection-end-column=\"25\" />\n          <folding>\n            <element signature=\"e#307#316#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/routing.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1280\">\n          <caret line=\"80\" column=\"16\" lean-forward=\"false\" selection-start-line=\"80\" selection-start-column=\"16\" selection-end-line=\"80\" selection-end-column=\"16\" />\n          <folding>\n            <element signature=\"e#0#65#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/tests.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/apps.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/admin.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/migrations/0001_initial.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"752\">\n          <caret line=\"47\" column=\"0\" lean-forward=\"false\" selection-start-line=\"47\" selection-start-column=\"0\" selection-end-line=\"47\" selection-end-column=\"0\" />\n          <folding>\n            <element signature=\"e#0#28#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/consumers.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1376\">\n          <caret line=\"86\" column=\"0\" lean-forward=\"false\" selection-start-line=\"86\" selection-start-column=\"0\" selection-end-line=\"86\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n          <folding>\n            <element signature=\"e#307#316#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/change_password.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"48\">\n          <caret line=\"3\" column=\"25\" lean-forward=\"false\" selection-start-line=\"3\" selection-start-column=\"25\" selection-end-line=\"3\" selection-end-column=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/get_privat_chat.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"656\">\n          <caret line=\"41\" column=\"93\" lean-forward=\"false\" selection-start-line=\"41\" selection-start-column=\"93\" selection-end-line=\"41\" selection-end-column=\"93\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1280\">\n          <caret line=\"80\" column=\"16\" lean-forward=\"true\" selection-start-line=\"80\" selection-start-column=\"16\" selection-end-line=\"80\" selection-end-column=\"16\" />\n          <folding>\n            <element signature=\"e#0#65#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/routing.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/consumers.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1376\">\n          <caret line=\"86\" column=\"0\" lean-forward=\"false\" selection-start-line=\"86\" selection-start-column=\"0\" selection-end-line=\"86\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"752\">\n          <caret line=\"47\" column=\"0\" lean-forward=\"false\" selection-start-line=\"47\" selection-start-column=\"0\" selection-end-line=\"47\" selection-end-column=\"0\" />\n          <folding>\n            <element signature=\"e#0#28#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/chat.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"624\">\n          <caret line=\"39\" column=\"71\" lean-forward=\"true\" selection-start-line=\"39\" selection-start-column=\"68\" selection-end-line=\"39\" selection-end-column=\"93\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n          <folding>\n            <element signature=\"e#307#316#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/db.sqlite3\" />\n    <entry file=\"file://$PROJECT_DIR$/static/bootstrap.css\" />\n    <entry file=\"file://$PROJECT_DIR$/templates/base.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"304\">\n          <caret line=\"25\" column=\"33\" lean-forward=\"false\" selection-start-line=\"25\" selection-start-column=\"33\" selection-end-line=\"25\" selection-end-column=\"33\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/privat_chat.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"528\">\n          <caret line=\"138\" column=\"31\" lean-forward=\"true\" selection-start-line=\"138\" selection-start-column=\"31\" selection-end-line=\"138\" selection-end-column=\"31\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/change_password.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"48\">\n          <caret line=\"3\" column=\"25\" lean-forward=\"false\" selection-start-line=\"3\" selection-start-column=\"25\" selection-end-line=\"3\" selection-end-column=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/информация о чате.txt\" />\n    <entry file=\"file://$PROJECT_DIR$/chatapp/tests.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/admin.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/migrations/0001_initial.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/apps.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/consumers.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1264\">\n          <caret line=\"86\" column=\"0\" lean-forward=\"false\" selection-start-line=\"86\" selection-start-column=\"0\" selection-end-line=\"86\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/get_privat_chat.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"656\">\n          <caret line=\"41\" column=\"93\" lean-forward=\"false\" selection-start-line=\"41\" selection-start-column=\"93\" selection-end-line=\"41\" selection-end-column=\"93\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$USER_HOME$/liveblog/Lib/site-packages/django/contrib/auth/models.py\" />\n    <entry file=\"file://$PROJECT_DIR$/chatapp/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"832\">\n          <caret line=\"55\" column=\"24\" lean-forward=\"false\" selection-start-line=\"55\" selection-start-column=\"24\" selection-end-line=\"55\" selection-end-column=\"24\" />\n          <folding>\n            <element signature=\"e#0#28#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatapp/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1072\">\n          <caret line=\"75\" column=\"7\" lean-forward=\"false\" selection-start-line=\"75\" selection-start-column=\"7\" selection-end-line=\"75\" selection-end-column=\"11\" />\n          <folding>\n            <element signature=\"e#0#65#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/requirements.txt\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/runtime.txt\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"16\">\n          <caret line=\"1\" column=\"0\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"0\" selection-end-line=\"1\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Procfile\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"16\">\n          <caret line=\"1\" column=\"0\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"0\" selection-end-line=\"1\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/app.json\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"16\">\n          <caret line=\"1\" column=\"21\" lean-forward=\"false\" selection-start-line=\"1\" selection-start-column=\"21\" selection-end-line=\"1\" selection-end-column=\"21\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/templates/chat.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"624\">\n          <caret line=\"39\" column=\"71\" lean-forward=\"false\" selection-start-line=\"39\" selection-start-column=\"68\" selection-end-line=\"39\" selection-end-column=\"93\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/wsgi.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"272\">\n          <caret line=\"19\" column=\"0\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"0\" selection-end-line=\"19\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/urls.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"8\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"8\" selection-end-line=\"0\" selection-end-column=\"8\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/routing.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/local_settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-52\">\n          <caret line=\"28\" column=\"0\" lean-forward=\"false\" selection-start-line=\"28\" selection-start-column=\"0\" selection-end-line=\"28\" selection-end-column=\"0\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/chatproject/settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"432\">\n          <caret line=\"147\" column=\"0\" lean-forward=\"true\" selection-start-line=\"147\" selection-start-column=\"0\" selection-end-line=\"147\" selection-end-column=\"0\" />\n          <folding>\n            <element signature=\"e#307#316#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1497109254000)
++++ .idea/workspace.xml	(revision )
+@@ -2,44 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="259404e2-dc2f-440a-a78c-3c910e20b447" name="Default" comment="">
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/chat4.iml" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.json" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/__init__.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/admin.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/apps.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/consumers.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/migrations/0001_initial.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/migrations/__init__.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/models.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/tests.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatapp/views.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatproject/local_settings.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatproject/routing.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatproject/settings.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatproject/urls.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatproject/wsgi.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/installation.txt" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runtime.txt" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/bootstrap.min.js" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/html5shiv.js" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/jquery-3.1.1.min.js" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/respond.min.js" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/styles.css" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/change_password.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/chat.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/clear_db.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/get_privat_chat.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/privat_chat.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/register.html" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/registration/login.html" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
+@@ -51,22 +14,48 @@
+   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/Procfile">
++      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/chatapp/views.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="16">
+-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+-              <folding />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/app.json">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="16">
+-              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+-              <folding />
++            <state relative-caret-position="128">
++              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="43" />
++              <folding>
++                <element signature="e#0#65#0" expanded="true" />
++                <marker date="1498068161385" expanded="true" signature="2006:2085" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="3756:3960" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="3769:3901" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="3995:4215" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="4242:5313" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="4354:5187" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="4367:5141" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="4888:5116" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="5342:5392" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="5420:6550" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="5562:6230" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="5575:5778" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="5794:6005" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6022:6172" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6235:6509" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6575:7839" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6609:7692" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6734:7491" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="6914:7276" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="7002:7167" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="7294:7452" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="7507:7692" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="7528:7633" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="7860:8563" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="8147:8492" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="8309:8412" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="8585:9520" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="8672:9013" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="9025:9500" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="9339:9446" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="9545:11023" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="9872:10359" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="10157:10359" ph="..." />
++                <marker date="1498068161385" expanded="true" signature="10703:10971" ph="..." />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+@@ -81,48 +70,28 @@
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/runtime.txt">
++      <file leaf-file-name="consumers.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/chatapp/consumers.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="16">
+-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+-              <folding />
++            <state relative-caret-position="-1264">
++              <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
++              <folding>
++                <element signature="e#0#11#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/requirements.txt">
++      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/chatapp/models.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="0">
+-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++            <state relative-caret-position="181">
++              <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/chatproject/local_settings.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-52">
+-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+-              <folding />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/chatproject/settings.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="432">
+-              <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+-              <folding>
+-                <element signature="e#307#316#0" expanded="true" />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+       <file leaf-file-name="routing.py" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/chatproject/routing.py">
+           <provider selected="true" editor-type-id="text-editor">
+@@ -163,6 +132,7 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="PUSH_TAGS">
+       <GitPushTagMode>
+@@ -219,6 +189,7 @@
+     </navigator>
+     <panes>
+       <pane id="Scratches" />
++      <pane id="Scope" />
+       <pane id="ProjectPane">
+         <subPane>
+           <PATH>
+@@ -273,14 +244,28 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="Multichat5" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="Multichat5" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="chatapp" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
+         </subPane>
+       </pane>
+-      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
++    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+@@ -460,43 +445,56 @@
+     <frame x="-4" y="-4" width="1032" height="748" extended-state="6" />
+     <editor active="true" />
+     <layout>
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25967413" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27494907" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.51171875" order="0" side_tool="true" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264" sideWeight="0.51527494" order="0" side_tool="true" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48472506" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.51171875" order="0" side_tool="true" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25967413" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
++      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+     </layout>
+     <layout-to-restore>
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.51171875" order="0" side_tool="true" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25967413" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+     </layout-to-restore>
+   </component>
+@@ -546,9 +544,7 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="880">
+           <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+-          <folding>
+-            <element signature="e#0#28#0" expanded="true" />
+-          </folding>
++          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -557,9 +553,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="16">
+           <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+-          <folding>
+-            <element signature="e#307#316#0" expanded="true" />
+-          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -576,6 +569,40 @@
+           <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+           <folding>
+             <element signature="e#0#65#0" expanded="true" />
++            <marker date="1498068161385" expanded="true" signature="2006:2085" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3756:3960" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3769:3901" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3995:4215" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4242:5313" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4354:5187" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4367:5141" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4888:5116" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5342:5392" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5420:6550" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5562:6230" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5575:5778" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5794:6005" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6022:6172" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6235:6509" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6575:7839" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6609:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6734:7491" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6914:7276" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7002:7167" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7294:7452" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7507:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7528:7633" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7860:8563" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8147:8492" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8309:8412" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8585:9520" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8672:9013" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9025:9500" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9339:9446" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9545:11023" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9872:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10157:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10703:10971" ph="..." />
+           </folding>
+         </state>
+       </provider>
+@@ -619,9 +646,7 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="752">
+           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+-          <folding>
+-            <element signature="e#0#28#0" expanded="true" />
+-          </folding>
++          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -636,9 +661,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+-          <folding>
+-            <element signature="e#307#316#0" expanded="true" />
+-          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -662,6 +684,40 @@
+           <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+           <folding>
+             <element signature="e#0#65#0" expanded="true" />
++            <marker date="1498068161385" expanded="true" signature="2006:2085" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3756:3960" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3769:3901" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3995:4215" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4242:5313" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4354:5187" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4367:5141" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4888:5116" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5342:5392" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5420:6550" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5562:6230" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5575:5778" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5794:6005" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6022:6172" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6235:6509" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6575:7839" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6609:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6734:7491" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6914:7276" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7002:7167" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7294:7452" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7507:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7528:7633" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7860:8563" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8147:8492" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8309:8412" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8585:9520" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8672:9013" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9025:9500" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9339:9446" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9545:11023" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9872:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10157:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10703:10971" ph="..." />
+           </folding>
+         </state>
+       </provider>
+@@ -684,9 +740,7 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="752">
+           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+-          <folding>
+-            <element signature="e#0#28#0" expanded="true" />
+-          </folding>
++          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -701,9 +755,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+-          <folding>
+-            <element signature="e#307#316#0" expanded="true" />
+-          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -766,13 +817,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/chatapp/consumers.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1264">
+-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/templates/get_privat_chat.html">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="656">
+@@ -781,22 +825,46 @@
+       </provider>
+     </entry>
+     <entry file="file://$USER_HOME$/liveblog/Lib/site-packages/django/contrib/auth/models.py" />
+-    <entry file="file://$PROJECT_DIR$/chatapp/models.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="832">
+-          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+-          <folding>
+-            <element signature="e#0#28#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/chatapp/views.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1072">
+-          <caret line="75" column="7" lean-forward="false" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="11" />
++        <state relative-caret-position="128">
++          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="43" />
+           <folding>
+             <element signature="e#0#65#0" expanded="true" />
++            <marker date="1498068161385" expanded="true" signature="2006:2085" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3756:3960" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3769:3901" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="3995:4215" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4242:5313" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4354:5187" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4367:5141" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="4888:5116" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5342:5392" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5420:6550" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5562:6230" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5575:5778" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="5794:6005" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6022:6172" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6235:6509" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6575:7839" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6609:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6734:7491" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="6914:7276" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7002:7167" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7294:7452" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7507:7692" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7528:7633" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="7860:8563" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8147:8492" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8309:8412" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8585:9520" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="8672:9013" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9025:9500" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9339:9446" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9545:11023" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="9872:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10157:10359" ph="..." />
++            <marker date="1498068161385" expanded="true" signature="10703:10971" ph="..." />
+           </folding>
+         </state>
+       </provider>
+@@ -805,7 +873,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -813,7 +880,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="16">
+           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -821,7 +887,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="16">
+           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -829,7 +894,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="16">
+           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -869,7 +933,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="-52">
+           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+-          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -877,9 +940,24 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="432">
+           <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/chatapp/consumers.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-1264">
++          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+           <folding>
+-            <element signature="e#307#316#0" expanded="true" />
++            <element signature="e#0#11#0" expanded="true" />
+           </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/chatapp/models.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="181">
++          <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
