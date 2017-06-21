@@ -151,8 +151,8 @@ def privat_chat(request):
             # if request for go to existing chat
             chat_id = request.POST["chat_id"]
             chat_name = request.POST["chat_name"]
-            print (chat_id)
-            print (chat_name)
+#             print (chat_id)
+#             print (chat_name)
         except:
             # if request for create a new chat
             users = request.POST.getlist("users", default=None)
@@ -214,11 +214,11 @@ def show(request):
     userset1 = []
     for ob in userset:
         username = User.objects.filter(id = ob["user"]).values("username")[0]
-        user_on = 0
-        if ob["user_on"]:
+        user_on = 0 
+        if ob["user_on"]: # user is online in the same chat
             user_on = 2
         else:
-            if Reply_Channel.objects.filter(user_id = ob["user"]).count():
+            if Reply_Channel.objects.filter(user_id = ob["user"]).count(): # user is online in an other chat
                 user_on = 1
 
         userset1.append({"user_on":user_on, "username":username["username"] })
@@ -241,7 +241,7 @@ def users(request):
         chat_id = request.POST["chat_id"]
         # get all users
         userset = []
-        username_exists = False
+#         username_exists = False
         userset1 = User.objects.all().values('id', 'username')
         userset2 = Privat_Chat_User.objects.filter(chat_id=chat_id).values_list('user_id', flat=True)
         for user in userset1:
