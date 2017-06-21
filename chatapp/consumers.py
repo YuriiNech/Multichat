@@ -67,7 +67,7 @@ def ws_connect(message):
     rec = Reconnect(user_id=message.user.id, rec=1)
     rec.save()
     # add reply_channel for user in DB
-    user_id = message.user.id
+    user_id = int(message.user.id)
 
     u = Reply_Channel(user_id=user_id, reply_channel=message.reply_channel.name)
     u.save()
