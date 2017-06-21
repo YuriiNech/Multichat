@@ -5,7 +5,7 @@ from django.contrib.auth import login, logout, authenticate
 import sqlite3
 import time
 from django.http import JsonResponse
-from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel
+from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
 from datetime import datetime, timedelta
 
 def accounts(request):
@@ -41,15 +41,15 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
-
+    print('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
 
 def create_privat_chat(request):
     if not request.user.is_authenticated():
         return redirect('/login')
-
-
+   
     # check for existing chats with the name and userset
     chat_name = request.POST['chat_name']
     users_id = request.POST.getlist("users", default=None)
@@ -64,7 +64,6 @@ def create_privat_chat(request):
             userset2 = set(userset2)
 
             if (userset1 == userset2):
-                conn.close()
                 return exist_chat_id
 
     # create new chat
@@ -77,7 +76,7 @@ def create_privat_chat(request):
     for user_id in userset1:
         u = Privat_Chat_User(chat_id=chat_id, user_id=user_id, user_on=0, new_message=1)
         u.save()
-
+        
     return chat_id
 
 
@@ -121,20 +120,12 @@ def leave_chat(request):
 
             chat_id = request.POST["chat_id"]
             user_id = request.user.id
-            conn = sqlite3.connect('db.sqlite3')
-            cur = conn.cursor()
-            t = (int(chat_id),int(user_id),)
-            cur.execute("DELETE FROM chatapp_privat_chat_user WHERE chat_id = ? AND user_id = ?", t)
-            conn.commit()
-            t = (int(chat_id), )
-            cur.execute("SELECT user_id FROM chatapp_privat_chat_user WHERE chat_id = ? ", t)
-            id = cur.fetchone()
-            if not id :
-                cur.execute("DELETE FROM chatapp_privat_chat WHERE chat_id = ?", t)
-                conn.commit()
-                cur.execute("DELETE FROM chatapp_privat_chat_name WHERE id = ?", t)
-                conn.commit()
-            conn.close()
+            
+            Privat_Chat_User.objects.filter(chat_id = chat_id).filter(user_id = user_id).delete()
+            с = Privat_Chat_User.objects.filter(chat_id = chat_id).count()
+            if c:
+                privat_Chat.objects.filter(chat_id = chat_id).delete() 
+                privat_Chat_Name.objects.filter(id = chat_id).delete()
 
         except:
 
@@ -160,8 +151,8 @@ def privat_chat(request):
             # if request for go to existing chat
             chat_id = request.POST["chat_id"]
             chat_name = request.POST["chat_name"]
-            print (chat_id)
-            print (chat_name)
+#             print (chat_id)
+#             print (chat_name)
         except:
             # if request for create a new chat
             users = request.POST.getlist("users", default=None)
@@ -169,6 +160,7 @@ def privat_chat(request):
             chat_id = create_privat_chat(request)
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
+        Reconnect.objects.filter(user_id=request.user.id).delete()
         return render(request, 'privat_chat.html', data)
     # # Is access allowed?
     # conn = sqlite3.connect('db.sqlite3')
@@ -222,11 +214,11 @@ def show(request):
     userset1 = []
     for ob in userset:
         username = User.objects.filter(id = ob["user"]).values("username")[0]
-        user_on = 0
-        if ob["user_on"]:
+        user_on = 0 
+        if ob["user_on"]: # user is online in the same chat
             user_on = 2
         else:
-            if Reply_Channel.objects.filter(user_id = ob["user"]).count():
+            if Reply_Channel.objects.filter(user_id = ob["user"]).count(): # user is online in an other chat
                 user_on = 1
 
         userset1.append({"user_on":user_on, "username":username["username"] })
@@ -249,7 +241,7 @@ def users(request):
         chat_id = request.POST["chat_id"]
         # get all users
         userset = []
-        username_exists = False
+#         username_exists = False
         userset1 = User.objects.all().values('id', 'username')
         userset2 = Privat_Chat_User.objects.filter(chat_id=chat_id).values_list('user_id', flat=True)
         for user in userset1:
@@ -286,9 +278,10 @@ def clear_db(request):
     privat_chat_count = Privat_Chat.objects.all().count()
     privat_chat_name_count = Privat_Chat_Name.objects.all().count()
     user_count = User.objects.all().count()
-    from os.path import getsize
-    file_size = getsize('db.sqlite3')
-    file_size = round(file_size / 1048576 , 3)
+#     from os.path import getsize
+#     file_size = getsize('db.sqlite3')
+#     file_size = round(file_size / 1048576 , 3)
+    file_size = 0
     data = {"chat_count":chat_count, "privat_chat_count":privat_chat_count, "file_size":file_size,
             "user_count":user_count, "privat_chat_name_count":privat_chat_name_count, "chat":1,
             "log": request.user.is_authenticated(), "username": request.user.username}

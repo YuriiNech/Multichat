@@ -19,3 +19,4 @@ txaio==2.7.0
 whitenoise==3.3.0
 zope.interface==4.4.0
 psycopg2==2.6.2
+django-redis-cache==1.7.1

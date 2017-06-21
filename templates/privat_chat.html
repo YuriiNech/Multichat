@@ -24,8 +24,12 @@
             <!--messages with websockets-->
             var msgArea = $('#msgArea');
             var elementMessage = $('#message');
-
-            var webSocket = new WebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
+            if (window.location.protocol == "https:") {
+//               var webSocket = new WebSocket('wss://' + window.location.host + '/chat'+{{chat_id}}); 
+              var webSocket = new ReconnectingWebSocket('wss://' + window.location.host + '/chat'+{{chat_id}});
+            } else {
+              var webSocket = new ReconnectingWebSocket('ws://' + window.location.host + '/chat'+{{chat_id}});
+            };   
 
             webSocket.onmessage = function(message) {
                 var data = JSON.parse(message.data)
@@ -96,6 +100,7 @@
                 event.preventDefault();
 
                 data = {"chat_id":chat_id}
+//                 alert (chat_id);
                 jQuery.post("/show/",data, function(users){
 
                     users.forEach(function(user, i, users) {
@@ -174,7 +179,7 @@
 
 </form>
 
-<form style="display:inline-block; padding-left:40px"  action="/show" method="post">
+<form style="display:inline-block; padding-left:40px"  action="/show/" method="post">
 
         <div
             <input type='hidden'  name="chat_id" value={{chat_id}} />
