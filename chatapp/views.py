@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
-import sqlite3
+# import sqlite3
 import time
 from django.http import JsonResponse
 from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
@@ -41,7 +41,6 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
-    print('now in chat !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
@@ -50,7 +49,7 @@ def create_privat_chat(request):
     if not request.user.is_authenticated():
         return redirect('/login')
    
-    # check for existing chats with the name and userset
+    # check for existing chats with the name and userset(Prevents the creation of duplicates when updating the site) 
     chat_name = request.POST['chat_name']
     users_id = request.POST.getlist("users", default=None)
     userset1 = set()
@@ -71,7 +70,7 @@ def create_privat_chat(request):
     ch.save()
     ids = Privat_Chat_Name.objects.filter(chat_name=chat_name).values('id')
     for id in ids:
-        chat_id = id['id']
+        chat_id = id['id'] # we need only last id
 
     for user_id in userset1:
         u = Privat_Chat_User(chat_id=chat_id, user_id=user_id, user_on=0, new_message=1)
@@ -117,13 +116,12 @@ def leave_chat(request):
 
     if request.method == "POST":
         try:
-
             chat_id = request.POST["chat_id"]
             user_id = request.user.id
             
             Privat_Chat_User.objects.filter(chat_id = chat_id).filter(user_id = user_id).delete()
             с = Privat_Chat_User.objects.filter(chat_id = chat_id).count()
-            if c:
+            if c==0:
                 privat_Chat.objects.filter(chat_id = chat_id).delete() 
                 privat_Chat_Name.objects.filter(id = chat_id).delete()
 
@@ -131,8 +129,7 @@ def leave_chat(request):
 
             print ("ERROR")
 
-    return redirect( '/chat',
-                  {"log": request.user.is_authenticated(), "username": request.user.username})
+    return redirect( '/chat')
 
 
 
@@ -151,24 +148,19 @@ def privat_chat(request):
             # if request for go to existing chat
             chat_id = request.POST["chat_id"]
             chat_name = request.POST["chat_name"]
-#             print (chat_id)
-#             print (chat_name)
         except:
             # if request for create a new chat
             users = request.POST.getlist("users", default=None)
             chat_name = request.POST["chat_name"]
             chat_id = create_privat_chat(request)
+            
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
+        
         Reconnect.objects.filter(user_id=request.user.id).delete()
+        
         return render(request, 'privat_chat.html', data)
-    # # Is access allowed?
-    # conn = sqlite3.connect('db.sqlite3')
-    # cur = conn.cursor()
-    # t = (int(chat_id),int(user_id),)
-    # cur.execute("SELECT chat_id FROM chatapp_privat_chat_user WHERE chat_id = ? AND user_id = ?", t)
-    # id = cur.fetchone()
-    # if (id):
+    
     return redirect( '/get_privat_chat')
 
 
@@ -196,9 +188,11 @@ def register(request):
             return redirect ('/login')
         except:
             data = {"log": request.user.is_authenticated(), "username": request.user.username,
-                     "chat": 1}
+                     "chat": 1}            
             return render(request, 'register.html', data)
+        
     data = {"log": request.user.is_authenticated(), "username": request.user.username,"chat": 1}
+    
     return render(request, 'register.html', data)
 
 
@@ -209,7 +203,6 @@ def show(request):
     chat_id = request.POST["chat_id"]
 
     # get all users of private chat
-
     userset = Privat_Chat_User.objects.filter(chat_id = chat_id).values('user', 'user_on')
     userset1 = []
     for ob in userset:
@@ -227,12 +220,13 @@ def show(request):
     return response
 
 
-def users(request):
+def users(request):   # for add user to private chat
     if not request.user.is_authenticated():
         return redirect('/login')
     try:
         user_id = request.POST["user_id"]
         chat_id = request.POST["chat_id"]
+        # add user to private chat
         u = Privat_Chat_User(chat_id = chat_id, user_id = user_id, user_on = 0, new_message = 1)
         u.save()
         user = Privat_Chat_User.objects.filter(user_id = user_id).values_list('user_id', flat=True)
@@ -241,11 +235,10 @@ def users(request):
         chat_id = request.POST["chat_id"]
         # get all users
         userset = []
-#         username_exists = False
         userset1 = User.objects.all().values('id', 'username')
         userset2 = Privat_Chat_User.objects.filter(chat_id=chat_id).values_list('user_id', flat=True)
         for user in userset1:
-
+            # Exclude users who are already in the chat
             if user['id'] not in userset2:
                 userset.append((user['id'], user['username']))
 
@@ -263,7 +256,7 @@ def clear_db(request):
         return redirect('/chat')
 
     if request.method == "POST":
-        lim = 365
+        lim = 7
         exp = datetime.now() - timedelta(days=lim, minutes=0)
 
         g = Chat.objects.filter(time__lt=exp).delete()
