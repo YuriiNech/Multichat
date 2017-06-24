@@ -7,6 +7,7 @@ import time
 from django.http import JsonResponse
 from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
 from datetime import datetime, timedelta
+from django.core.mail import send_mail
 
 def accounts(request):
 
@@ -41,6 +42,9 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
+    emailmessage ='Someone entered the chat. It is ' + request.user.username
+    send_mail('Multichat', emailmessage, 'jurijn1961@gmail.com',
+              ['jurijn1961@gmail.com'], fail_silently=False)
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
