@@ -8,9 +8,9 @@ from django.http import JsonResponse
 from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat, Reply_Channel, Reconnect
 from datetime import datetime, timedelta
 
-def accounts(request):
+# def accounts(request):
 
-    return redirect("/chat")
+#     return redirect("/chat")
 
 
 def change_password(request):
