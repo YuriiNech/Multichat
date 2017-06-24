@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'^register/', register),
     url(r'^login/', login),
     url(r'^logout/', logout_view),
-    url(r'^accounts/profile/', accounts),
+    url(r'^accounts/profile/', chat),
     url(r'^is_username_exists/', is_username_exists),
     url(r'^change_password/', change_password),
     url(r'^leave/', leave_chat),
