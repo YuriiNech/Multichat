@@ -256,7 +256,7 @@ def clear_db(request):
         return redirect('/chat')
 
     if request.method == "POST":
-        lim = 7
+        lim = 365
         exp = datetime.now() - timedelta(days=lim, minutes=0)
 
         g = Chat.objects.filter(time__lt=exp).delete()
