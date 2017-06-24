@@ -173,7 +173,10 @@ CHANNEL_LAYERS = {
     },
 }
 
-# try:
-#     from .local_settings import *
-# except ImportError:
-#     pass
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'jurijn1961@gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jurijn1961@gmail.com'
+EMAIL_HOST_PASSWORD = 'PoiuytrE'
+EMAIL_PORT = 587
