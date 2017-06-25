@@ -57,102 +57,102 @@
                 return  confirm('Are you sure you want to leave this private chat forever?')
             })
 
-            <!--add user to private chat-->
-            var content = '';
-            var chat_id = {{chat_id}};
-            $('#btnAdd').click( function(event){
-                content = '';
-                $("#modal_form_text").text("Select user to add")
-                event.preventDefault(); // выключaем стaндaртную рoль элементa
+//             <!--add user to private chat-->
+//             var content = '';
+//             var chat_id = {{chat_id}};
+//             $('#btnAdd').click( function(event){
+//                 content = '';
+//                 $("#modal_form_text").text("Select user to add")
+//                 event.preventDefault(); 
 
-                data = {"chat_id":chat_id}
-                jQuery.post("/users/",data, function(users_to_add){
+//                 data = {"chat_id":chat_id}
+//                 jQuery.post("/users/",data, function(users_to_add){
 
-                    users_to_add.map((user) =>
-                        content += '<li><a href="#" id="chat_id" onclick="add_user(' + user[0] + ');return false">' + user[1] +'</a></li>'
-                    );
-                    document.getElementById('content').innerHTML = content
-                 });
-                $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-                    function(){ // пoсле выпoлнения предъидущей aнимaции
-                        $('#modal_form')
-                            .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-                            .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
-                });
-            });
-            /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-            $('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
-                content = '';
-                $('#modal_form')
-                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-                        function(){ // пoсле aнимaции
-                            $(this).css('display', 'none'); // делaем ему display: none;
-                            $('#overlay').fadeOut(400); // скрывaем пoдлoжку
-                        }
-                    );
-            });
+//                     users_to_add.map((user) =>
+//                         content += '<li><a href="#" id="chat_id" onclick="add_user(' + user[0] + ');return false">' + user[1] +'</a></li>'
+//                     );
+//                     document.getElementById('content').innerHTML = content
+//                  });
+//                 $('#overlay').fadeIn(400, 
+//                     function(){ 
+//                         $('#modal_form')
+//                             .css('display', 'block') 
+//                             .animate({opacity: 1, top: '50%'}, 200); 
+//                 });
+//             });
+            
+//             $('#modal_close, #overlay').click( function(){ 
+//                 content = '';
+//                 $('#modal_form')
+//                     .animate({opacity: 0, top: '45%'}, 200,  
+//                         function(){ 
+//                             $(this).css('display', 'none');
+//                             $('#overlay').fadeOut(400); 
+//                         }
+//                     );
+//             });
 
-            <!--show users of private chat-->
-            var content = '';
-            var chat_id = {{chat_id}}; 
+//             <!--show users of private chat-->
+//             var content = '';
+//             var chat_id = {{chat_id}}; 
 
-            $('#btnShow').click( function(event){
-                content = '';
-                $("#modal_form_text").text("Members of this private chat")
-                event.preventDefault();
+//             $('#btnShow').click( function(event){
+//                 content = '';
+//                 $("#modal_form_text").text("Members of this private chat")
+//                 event.preventDefault();
 
-                data = {"chat_id":chat_id}
+//                 data = {"chat_id":chat_id}
 
-                jQuery.post("/show/",data, function(users){
+//                 jQuery.post("/show/",data, function(users){
 
-                    users.forEach(function(user, i, users) {
+//                     users.forEach(function(user, i, users) {
 
-                        if (user["user_on"]==1){
-                            content += '<li style="color:blue" >' + user["username"] + '      online in other chat </li>'
-                        } else if (user["user_on"]==2){
-                            content += '<li style="color:#00a050" >' + user["username"] + '      online in this chat </li>'
-                        }else{
-                            content += '<li>' + user["username"] + '      offline </li>'
-                        }
-                    });
+//                         if (user["user_on"]==1){
+//                             content += '<li style="color:blue" >' + user["username"] + '      online in other chat </li>'
+//                         } else if (user["user_on"]==2){
+//                             content += '<li style="color:#00a050" >' + user["username"] + '      online in this chat </li>'
+//                         }else{
+//                             content += '<li>' + user["username"] + '      offline </li>'
+//                         }
+//                     });
 
-                    document.getElementById('content').innerHTML = content
-                 });
-                $('#overlay').fadeIn(400,
-                    function(){
-                        $('#modal_form')
-                            .css('display', 'block')
-                            .animate({opacity: 1, top: '50%'}, 200);
-                });
-            });
+//                     document.getElementById('content').innerHTML = content
+//                  });
+//                 $('#overlay').fadeIn(400,
+//                     function(){
+//                         $('#modal_form')
+//                             .css('display', 'block')
+//                             .animate({opacity: 1, top: '50%'}, 200);
+//                 });
+//             });
 
-            $('#modal_close, #overlay').click( function(){
-                $('#modal_form').animate({opacity: 0, top: '45%'}, 200, function(){
-                            $(this).css('display', 'none');
-                            $('#overlay').fadeOut(400);
-                        }
-                    );
-            });
+//             $('#modal_close, #overlay').click( function(){
+//                 $('#modal_form').animate({opacity: 0, top: '45%'}, 200, function(){
+//                             $(this).css('display', 'none');
+//                             $('#overlay').fadeOut(400);
+//                         }
+//                     );
+//             });
 
-        })
+//         })
 
 
 
-        var chat_id = {{chat_id}};
-        var add_user = function(user_id){
+//         var chat_id = {{chat_id}};
+//         var add_user = function(user_id){
 
-                data = {"user_id":user_id, "chat_id" :chat_id};
-                jQuery.post("/users/",data, function(){
-                    content = '';
-                     $('#modal_form')
-                        .animate({opacity: 0, top: '45%'}, 200,
-                            function(){
-                                $(this).css('display', 'none');
-                                $('#overlay').fadeOut(400);
-                            }
-                        );
-                });
-         };
+//                 data = {"user_id":user_id, "chat_id" :chat_id};
+//                 jQuery.post("/users/",data, function(){
+//                     content = '';
+//                      $('#modal_form')
+//                         .animate({opacity: 0, top: '45%'}, 200,
+//                             function(){
+//                                 $(this).css('display', 'none');
+//                                 $('#overlay').fadeOut(400);
+//                             }
+//                         );
+//                 });
+//          };
     </script>
 
 {% endblock %}
@@ -181,7 +181,7 @@
 
 </form>
 
-<form style="display:inline-block; padding-left:40px"  action="/show/" method="post">
+<!-- <form style="display:inline-block; padding-left:40px"  action="/show/" method="post">
 
         <div
             <input type='hidden'  name="chat_id" value={{chat_id}} />
@@ -215,6 +215,6 @@
         <ul id="content"></ul>
     </div>
 </div>
-<div id="overlay"></div><!-- Пoдлoжкa -->
+<div id="overlay"></div><!-- Пoдлoжкa --> -->
 
 {% endblock %}
