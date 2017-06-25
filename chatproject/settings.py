@@ -180,7 +180,7 @@ EMAIL_HOST_USER = 'jurijn1961@gmail.com'
 EMAIL_HOST_PASSWORD = 'PoiuytrE'
 EMAIL_PORT = 587
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     pass
