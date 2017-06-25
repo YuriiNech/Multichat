@@ -66,12 +66,12 @@
                 event.preventDefault(); 
 
                 data = {"chat_id":chat_id}
-                jQuery.post("/users/",data, function(users_to_add){
+//                 jQuery.post("/users/",data, function(users_to_add){
 
-                    users_to_add.map((user) =>
-                        content += '<li><a href="#" id="chat_id" onclick="add_user(' + user[0] + ');return false">' + user[1] +'</a></li>'
-                    );
-                    document.getElementById('content').innerHTML = content
+//                     users_to_add.map((user) =>
+//                         content += '<li><a href="#" id="chat_id" onclick="add_user(' + user[0] + ');return false">' + user[1] +'</a></li>'
+//                     );
+//                     document.getElementById('content').innerHTML = content
                  });
                 $('#overlay').fadeIn(400, 
                     function(){ 
