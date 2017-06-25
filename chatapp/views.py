@@ -42,8 +42,11 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
-    emailmessage ='Someone entered the chat. It is ' + request.user.username
-    send_mail('Multichat', emailmessage, 'jurijn1961@gmail.com',
+    
+    emailmessage ='Someone entered the chat. It is: ' + request.user.username
+    emailmessage = emailmessage + '/n' + request.META["REMOTE_ADDR"] +" " + request.META["REMOTE_HOST"]+" " + request.META["HTTP_USER_AGENT"]
+
+    send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
               ['jurijn1961@gmail.com'], fail_silently=False)
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
