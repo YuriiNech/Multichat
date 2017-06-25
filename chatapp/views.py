@@ -44,7 +44,7 @@ def change_password(request):
 def chat(request):
     
     emailmessage ='Someone entered the chat. It is: ' + request.user.username
-    emailmessage = emailmessage + '/n' + request.META["REMOTE_ADDR"] +" " + request.META["REMOTE_HOST"]+" " + request.META["HTTP_USER_AGENT"]
+    emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"] +" " + request.META["REMOTE_HOST"]+ '\n' + request.META["HTTP_USER_AGENT"]
 
     send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
               ['jurijn1961@gmail.com'], fail_silently=False)
