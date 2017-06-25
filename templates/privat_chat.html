@@ -94,16 +94,15 @@
 
             <!--show users of private chat-->
             var content = '';
-            var chat_id = 1; 
-//             {{chat_id}}
-            alert ("chat_id" + chat_id);
+            var chat_id = {{chat_id}}; 
+
             $('#btnShow').click( function(event){
                 content = '';
                 $("#modal_form_text").text("Members of this private chat")
                 event.preventDefault();
 
                 data = {"chat_id":chat_id}
-//                 alert (chat_id);
+
                 jQuery.post("/show/",data, function(users){
 
                     users.forEach(function(user, i, users) {
