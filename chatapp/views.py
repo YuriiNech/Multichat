@@ -159,7 +159,7 @@ def privat_chat(request):
             users = request.POST.getlist("users", default=None)
             chat_name = request.POST["chat_name"]
             chat_id = create_privat_chat(request)
-            
+        print ("in privat_chat ", chat_id, chat name)    
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
         
