@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="259404e2-dc2f-440a-a78c-3c910e20b447" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatapp/models.py" afterPath="$PROJECT_DIR$/chatapp/models.py" />
     </list>
+    <ignored path="D:\PythonProjects\Multichat5\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +18,19 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="144">
+              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
-                <element signature="e#0#65#0" expanded="true" />
-                <marker date="1498068782246" expanded="true" signature="10649:10982" ph="..." />
-                <marker date="1498068782246" expanded="true" signature="10662:10930" ph="..." />
+                <element signature="e#0#45#0" expanded="true" />
+                <marker date="1498414286453" expanded="true" signature="9409:9515" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="9409:9569" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="9409:9589" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="9614:11116" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="9941:10428" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="10226:10428" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="10643:10765" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="10783:11116" ph="..." />
+                <marker date="1498414286453" expanded="true" signature="10796:11064" ph="..." />
               </folding>
             </state>
           </provider>
@@ -32,14 +39,9 @@
       <file leaf-file-name="chat.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/chat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
+            <state relative-caret-position="688">
               <caret line="43" column="71" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="93" />
-              <folding>
-                <marker date="1498068694562" expanded="false" signature="1584:1594" ph="..." />
-                <marker date="1498068694562" expanded="true" signature="1626:1707" ph="..." />
-                <marker date="1498068694562" expanded="true" signature="1734:1975" ph="..." />
-                <marker date="1498068694562" expanded="false" signature="1757:1790" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,10 +49,24 @@
       <file leaf-file-name="consumers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatapp/consumers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1872">
+            <state relative-caret-position="240">
               <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <marker date="1498414286421" expanded="true" signature="447:2336" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="1785:2322" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="3202:4869" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="3299:3419" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="3429:4599" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="3825:3878" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4070:4599" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4192:4599" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4213:4495" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4277:4493" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4297:4491" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4624:4867" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4644:4865" ph="..." />
+                <marker date="1498414286421" expanded="true" signature="4996:5062" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,7 +75,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="158">
               <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
@@ -94,7 +110,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding>
-                <marker date="1498068776876" expanded="true" signature="345:935" ph="..." />
+                <marker date="1498414286468" expanded="true" signature="345:931" ph="..." />
               </folding>
             </state>
           </provider>
@@ -166,7 +182,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +232,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Multichat5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Multichat5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Multichat5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Multichat5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="chatproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -237,6 +288,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,23 +314,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/chat4.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Procfile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/app.json</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/chatapp/consumers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatapp/models.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/chatapp/views.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/__pycache__/settings.cpython-34.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/routing.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/settings.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/urls.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/wsgi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/manage.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/requirements.txt</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/base.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/chat.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/privat_chat.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -287,10 +327,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatapp/migrations/0002_reconnect.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/chatproject/asgi.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/reconnecting-websocket.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap.min.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -545,43 +582,39 @@
       <option name="project" value="LOCAL" />
       <updated>1497095417796</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed settings.py">
+      <created>1498069221244</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1498069221244</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1032" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27494907" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26985744" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5040733" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.49592668" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.51171875" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264" sideWeight="0.48472506" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.51171875" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264" sideWeight="0.48828125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25967413" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -674,9 +707,16 @@
         <state relative-caret-position="1280">
           <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-            <marker date="1498068782246" expanded="true" signature="10649:10982" ph="..." />
-            <marker date="1498068782246" expanded="true" signature="10662:10930" ph="..." />
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1498414286453" expanded="true" signature="9409:9515" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9569" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9589" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9614:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9941:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10226:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10643:10765" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10783:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10796:11064" ph="..." />
           </folding>
         </state>
       </provider>
@@ -757,9 +797,16 @@
         <state relative-caret-position="1280">
           <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-            <marker date="1498068782246" expanded="true" signature="10649:10982" ph="..." />
-            <marker date="1498068782246" expanded="true" signature="10662:10930" ph="..." />
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1498414286453" expanded="true" signature="9409:9515" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9569" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9589" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9614:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9941:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10226:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10643:10765" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10783:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10796:11064" ph="..." />
           </folding>
         </state>
       </provider>
@@ -861,10 +908,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chatapp/consumers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1872">
+        <state relative-caret-position="240">
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1498414286421" expanded="true" signature="447:2336" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="1785:2322" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="3202:4869" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="3299:3419" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="3429:4599" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="3825:3878" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4070:4599" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4192:4599" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4213:4495" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4277:4493" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4297:4491" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4624:4867" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4644:4865" ph="..." />
+            <marker date="1498414286421" expanded="true" signature="4996:5062" ph="..." />
           </folding>
         </state>
       </provider>
@@ -879,7 +940,7 @@
     <entry file="file://$USER_HOME$/liveblog/Lib/site-packages/django/contrib/auth/models.py" />
     <entry file="file://$PROJECT_DIR$/chatapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="158">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
@@ -887,12 +948,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chatapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="144">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-            <marker date="1498068782246" expanded="true" signature="10649:10982" ph="..." />
-            <marker date="1498068782246" expanded="true" signature="10662:10930" ph="..." />
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1498414286453" expanded="true" signature="9409:9515" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9569" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9409:9589" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9614:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="9941:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10226:10428" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10643:10765" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10783:11116" ph="..." />
+            <marker date="1498414286453" expanded="true" signature="10796:11064" ph="..." />
           </folding>
         </state>
       </provider>
@@ -927,14 +995,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
+        <state relative-caret-position="688">
           <caret line="43" column="71" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="93" />
-          <folding>
-            <marker date="1498068694562" expanded="false" signature="1584:1594" ph="..." />
-            <marker date="1498068694562" expanded="true" signature="1626:1707" ph="..." />
-            <marker date="1498068694562" expanded="true" signature="1734:1975" ph="..." />
-            <marker date="1498068694562" expanded="false" signature="1757:1790" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +1014,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
-            <marker date="1498068776876" expanded="true" signature="345:935" ph="..." />
+            <marker date="1498414286468" expanded="true" signature="345:931" ph="..." />
           </folding>
         </state>
       </provider>
