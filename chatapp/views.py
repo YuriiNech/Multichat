@@ -9,6 +9,14 @@ from chatapp.models import Privat_Chat_User, Privat_Chat_Name, Chat, Privat_Chat
 from datetime import datetime, timedelta
 from django.core.mail import send_mail
 
+def about(request):
+    
+    
+    return render(request, 'about.html', {"log": request.user.is_authenticated(),
+                                         "username":request.user.username,"chat":1})
+
+
+
 def accounts(request):
 
     return redirect("/chat")
