@@ -5,6 +5,7 @@ from chatapp.views import chat, register, accounts, logout_view, get_privat_chat
 from chatapp.views import is_username_exists, change_password, leave_chat, users, show, clear_db
 
 urlpatterns = [
+    url(r'^about/', about),
     url(r'^$', chat),
     url(r'^admin/', admin.site.urls),
     url(r'^chat/', chat),
