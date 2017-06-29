@@ -54,13 +54,14 @@
                                 {% endif %}
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a  style="color:blue;"> {{ username }}</a></li>
+                                <li><a  style="color:blue;"> {{ username }}</a>
+				</li><li><a href="/about">About</a></li>
                                 <li><a href="/change_password">Change Password</a></li>
                                 <li><a href="/logout">Log Out</a></li>
                             </ul>
                         {% else %}
                             <ul class="nav navbar-nav navbar-right">
-
+				</li><li><a href="/about">About</a></li>
                                 <li><a href="/chat">Chat</a></li>
                                 <li><a href="/register">Register</a></li>
                                 <li><a href="/login">Log In</a></li>
