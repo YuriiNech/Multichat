@@ -48,20 +48,21 @@
                     <div class="collapse navbar-collapse" id="navbar">
                         {% if log %}
                             <ul class="nav navbar-nav">
-								<li ><a id ="privat_chat_color" href="/get_privat_chat">Private Chat</a></li>
+				<li ><a id ="privat_chat_color" href="/get_privat_chat">Private Chat</a></li>
                                 {% if chat %}
                                     <li><a href="/chat">Common Chat</a></li>
                                 {% endif %}
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a  style="color:blue;"> {{ username }}</a>
-				</li><li><a href="/about">About</a></li>
+                                
+				<li><a href="/about">About</a></li>
                                 <li><a href="/change_password">Change Password</a></li>
                                 <li><a href="/logout">Log Out</a></li>
+				<li><a  style="color:blue;"> {{ username }}</a></li>
                             </ul>
                         {% else %}
                             <ul class="nav navbar-nav navbar-right">
-				</li><li><a href="/about">About</a></li>
+				<li><a href="/about">About</a></li>
                                 <li><a href="/chat">Chat</a></li>
                                 <li><a href="/register">Register</a></li>
                                 <li><a href="/login">Log In</a></li>
