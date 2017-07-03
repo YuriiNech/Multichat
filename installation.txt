@@ -1,5 +1,5 @@
-Installation
-------------
+Installation for localhost
+--------------------------
 
 Make a new virtualenv for the project, and run:
 
