@@ -26,11 +26,7 @@ SECRET_KEY = ')dh7!w4t!!5-=3g+_8bpd=q3gf5h3!2crezy^0_3*)9(dg2obc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,30 +37,6 @@ INSTALLED_APPS = [
     'chatapp',
     'channels',
 ]
-
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'asgiref.inmemory.ChannelLayer',
-#         'ROUTING': 'chatproject.routing.channel_routing',
-#     },
-# }
-
-# from urllib.parse import urlparse
-
-# redis_url = urlparse(os.environ.get('REDIS_URL'))
-# CACHES = {
-#     "default": {
-#          "BACKEND": "redis_cache.RedisCache",
-#          "LOCATION": "{0}:{1}".format(redis_url.hostname, redis_url.port),
-#          "OPTIONS": {
-#              "PASSWORD": redis_url.password,
-#              "DB": 0,
-#          }
-#     }
-# }
-
-
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
