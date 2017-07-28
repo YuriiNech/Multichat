@@ -51,10 +51,18 @@ def change_password(request):
 
 def chat(request):
     
-    emailmessage ='Someone entered the chat. It is: ' + request.user.username
-    emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"] +" " + request.META["REMOTE_HOST"]+ '\n' + request.META["HTTP_USER_AGENT"]
-    send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
-              ['jurijn1961@gmail.com'], fail_silently=False)
+        if request.method == "POST":
+        try:
+#             print ("ip = ", request.POST["IP"])
+            emailmessage = 'Someone entered the chat. It is: ' + request.user.username
+            emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
+            emailmessage = emailmessage + '\n' + request.POST["IP"] + '\n' + request.META["HTTP_USER_AGENT"]
+            send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
+                      ['jurijn1961@gmail.com'], fail_silently=False)
+            response = JsonResponse({"client_ip": request.POST["IP"]})
+            return response
+        except:
+            pass
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
