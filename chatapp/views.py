@@ -61,7 +61,7 @@ def chat(request):
                 response = JsonResponse({"client_ip": request.POST["IP"]})
                 return response
             except:
-                response = JsonResponse({"client_ip": "0.0.0.0"}})
+                response = JsonResponse({"client_ip": "0.0.0.0"})
                 return response
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
