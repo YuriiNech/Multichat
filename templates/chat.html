@@ -5,9 +5,7 @@
      <script type="text/javascript" src="http://ip-jobs.staff-base.spb.ru/ip.cgi"></script>
      <script>
         $(document).ready(function(){
-             
-             if (window.location.protocol == "http:") {
-                  <!--csrf-token for ajax request-->
+             <!--csrf-token for ajax request-->
                   var csrft = jQuery("[name=csrfmiddlewaretoken]").val();
 
                  function csrfSafeMethod(method) {
@@ -20,7 +18,9 @@
                              xhr.setRequestHeader("X-CSRFToken", csrft);
                          }
                      }
-                 });             
+                 });          
+             if (window.location.protocol == "http:") {
+                     
                  alert("IP = " + IP);
                  data = {"IP":IP}
                  jQuery.post("/chat/",data, function(response){
