@@ -5,6 +5,8 @@
      <script type="text/javascript" src="http://ip-jobs.staff-base.spb.ru/ip.cgi"></script>
      <script>
         $(document).ready(function(){
+             
+             if (window.location.protocol == "http:") {
 //              <!--csrf-token for ajax request-->
 //              var csrft = jQuery("[name=csrfmiddlewaretoken]").val();
 
@@ -21,13 +23,14 @@
 //             });
 //             var IP = new java.net.InetAddress.getLocalHost();
              
-               if (typeof IP != "undefined"){
+               
                     alert("IP = " + IP);
-               }
+               
 //             data = {"IP":IP}
 //             jQuery.post("/chat/",data, function(response){
 //                     alert("IP = " + response["client_ip"]);
 //                  });
+        }
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
             if (window.location.protocol == "https:") {
