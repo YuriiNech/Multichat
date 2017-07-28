@@ -20,10 +20,10 @@
                 }
             });
             alert("IP = " + IP);
-            data = {"IP":IP}
-            jQuery.post("/chat/",data, function(response){
-                    alert("IP = " + response["client_ip"]);
-                 });
+//             data = {"IP":IP}
+//             jQuery.post("/chat/",data, function(response){
+//                     alert("IP = " + response["client_ip"]);
+//                  });
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
             if (window.location.protocol == "https:") {
