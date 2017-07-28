@@ -3,8 +3,27 @@
 {% block title %}Common Chat{% endblock %}
 {% block extra_head %}
 
-    <script>
+     <script>
         $(document).ready(function(){
+             <!--csrf-token for ajax request-->
+             var csrft = jQuery("[name=csrfmiddlewaretoken]").val();
+
+            function csrfSafeMethod(method) {
+                // these HTTP methods do not require CSRF protection
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+            }
+            $.ajaxSetup({
+                beforeSend: function(xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrft);
+                    }
+                }
+            });
+            <!--alert("csrft= " + csrft + IP);-->
+            data = {"IP":IP}
+            jQuery.post("/chat/",data, function(){
+                    <!--alert("Ajax" + response["client_ip"]);-->
+                 });
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
             if (window.location.protocol == "https:") {
