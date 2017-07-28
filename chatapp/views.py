@@ -53,7 +53,6 @@ def chat(request):
     
         if request.method == "POST":
         try:
-#             print ("ip = ", request.POST["IP"])
             emailmessage = 'Someone entered the chat. It is: ' + request.user.username
             emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
             emailmessage = emailmessage + '\n' + request.POST["IP"] + '\n' + request.META["HTTP_USER_AGENT"]
