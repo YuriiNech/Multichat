@@ -149,7 +149,7 @@ DEFAULT_FROM_EMAIL = 'jurijn1961@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'jurijn1961@gmail.com'
-EMAIL_HOST_PASSWORD = 'PoiuytreW'
+EMAIL_HOST_PASSWORD = 'PoiuytrE'
 EMAIL_PORT = 587
 
 # try:
