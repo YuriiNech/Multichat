@@ -66,8 +66,8 @@ def chat(request):
     emailmessage = 'Someone entered the chat. It is: ' + request.user.username
     emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
     emailmessage = emailmessage + '\n' + "undefined" + '\n' + request.META["HTTP_USER_AGENT"]
-    send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
-              ['jurijn1961@gmail.com'], fail_silently=False)    
+    send_mail('Multichatapp', emailmessage, 'jurij_n@meta.ua',
+              ['jurij_n@meta.ua'], fail_silently=False)    
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
