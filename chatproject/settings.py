@@ -149,7 +149,7 @@ DEFAULT_FROM_EMAIL = 'jurij_n@meta.ua'  #'jurijn1961@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.meta.ua'  #'smtp.gmail.com'
 EMAIL_HOST_USER = 'jurij_n@meta.ua' # 'jurijn1961@gmail.com'
-EMAIL_HOST_PASSWORD = 'JuriJ&NataliA61'
+EMAIL_HOST_PASSWORD = '********************'
 EMAIL_PORT = 465 # 587
 
 # try:
