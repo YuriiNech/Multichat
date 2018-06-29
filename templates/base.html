@@ -41,7 +41,9 @@
                             <span class="icon-bar"></span>
                         </button>
 			{% if log and username == "superuser" %}
-                        	<a class="navbar-brand" href="{% url 'admin:index' %}"><span>MULTICHAT</span></a>
+                            <a class="navbar-brand" href="{% url 'admin:index' %}"><span>ADMIN</span></a>
+			{%else%}
+			    <span>MULTICHAT</span>
 			{% endif %}    
                     </div>
                     <div class="collapse navbar-collapse" id="navbar">
