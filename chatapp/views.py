@@ -10,11 +10,9 @@ from datetime import datetime, timedelta
 from django.core.mail import send_mail
 
 def about(request):
-    
-    
+
     return render(request, 'about.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":1})
-
 
 
 def accounts(request):
@@ -23,6 +21,7 @@ def accounts(request):
 
 
 def change_password(request):
+    # Check for authentication
     if not request.user.is_authenticated():
         return redirect('/login')
     if request.method == "POST":
