@@ -49,24 +49,24 @@ def change_password(request):
                                                    "username":request.user.username, "chat":1})
 
 def chat(request):
-    
-#     if request.method == "POST":
-#         try:
-#             emailmessage = 'Someone entered the chat. It is: ' + request.user.username
-#             emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
-#             emailmessage = emailmessage + '\n' + request.POST["IP"] + '\n' + request.META["HTTP_USER_AGENT"]
-#             send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
-#                       ['jurijn1961@gmail.com'], fail_silently=False)
-#             response = JsonResponse({"client_ip": request.POST["IP"]})
-#             return response
-#         except:
-#             response = JsonResponse({"client_ip": "0.0.0.0"})
-#             return response
-#     emailmessage = 'Someone entered the chat. It is: ' + request.user.username
-#     emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
-#     emailmessage = emailmessage + '\n' + "undefined" + '\n' + request.META["HTTP_USER_AGENT"]
-#     send_mail('Multichatapp', emailmessage, 'jurij_n@meta.ua',
-#               ['jurij_n@meta.ua'], fail_silently=False)    
+
+    if request.method == "POST":
+        try:
+            emailmessage = 'Someone entered the chat. It is: ' + request.user.username
+            emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
+            emailmessage = emailmessage + '\n' + request.POST["IP"] + '\n' + request.META["HTTP_USER_AGENT"]
+            send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
+                      ['jurijn1961@gmail.com'], fail_silently=False)
+            response = JsonResponse({"client_ip": request.POST["IP"]})
+            return response
+        except:
+            response = JsonResponse({"client_ip": "0.0.0.0"})
+            return response
+    emailmessage = 'Someone entered the chat. It is: ' + request.user.username
+    emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
+    emailmessage = emailmessage + '\n' + "undefined" + '\n' + request.META["HTTP_USER_AGENT"]
+    send_mail('Multichatapp', emailmessage, 'jurij_n@meta.ua',
+              ['jurij_n@meta.ua'], fail_silently=False)
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
@@ -74,8 +74,8 @@ def chat(request):
 def create_privat_chat(request):
     if not request.user.is_authenticated():
         return redirect('/login')
-   
-    # check for existing chats with the name and userset(Prevents the creation of duplicates when updating the site) 
+
+    # check for existing chats with the name and userset(Prevents the creation of duplicates when updating the site)
     chat_name = request.POST['chat_name']
     users_id = request.POST.getlist("users", default=None)
     userset1 = set()
@@ -101,7 +101,7 @@ def create_privat_chat(request):
     for user_id in userset1:
         u = Privat_Chat_User(chat_id=chat_id, user_id=user_id, user_on=0, new_message=1)
         u.save()
-        
+
     return chat_id
 
 
@@ -144,11 +144,11 @@ def leave_chat(request):
         try:
             chat_id = request.POST["chat_id"]
             user_id = request.user.id
-            
+
             Privat_Chat_User.objects.filter(chat_id = chat_id).filter(user_id = user_id).delete()
             с = Privat_Chat_User.objects.filter(chat_id = chat_id).count()
             if c==0:
-                privat_Chat.objects.filter(chat_id = chat_id).delete() 
+                privat_Chat.objects.filter(chat_id = chat_id).delete()
                 privat_Chat_Name.objects.filter(id = chat_id).delete()
 
         except:
@@ -179,14 +179,14 @@ def privat_chat(request):
             users = request.POST.getlist("users", default=None)
             chat_name = request.POST["chat_name"]
             chat_id = create_privat_chat(request)
-        print ("in privat_chat ", chat_id, chat_name)    
+        print ("in privat_chat ", chat_id, chat_name)
         data = {"chat_name": chat_name, "chat_id": chat_id, "log": request.user.is_authenticated(),
                        "username": request.user.username, "chat":1}
-        
+
         Reconnect.objects.filter(user_id=request.user.id).delete()
-        
+
         return render(request, 'privat_chat.html', data)
-    
+
     return redirect( '/get_privat_chat')
 
 
@@ -214,11 +214,11 @@ def register(request):
             return redirect ('/login')
         except:
             data = {"log": request.user.is_authenticated(), "username": request.user.username,
-                     "chat": 1}            
+                     "chat": 1}
             return render(request, 'register.html', data)
-        
+
     data = {"log": request.user.is_authenticated(), "username": request.user.username,"chat": 1}
-    
+
     return render(request, 'register.html', data)
 
 
@@ -233,7 +233,7 @@ def show(request):
     userset1 = []
     for ob in userset:
         username = User.objects.filter(id = ob["user"]).values("username")[0]
-        user_on = 0 
+        user_on = 0
         if ob["user_on"]: # user is online in the same chat
             user_on = 2
         else:
