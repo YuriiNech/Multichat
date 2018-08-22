@@ -145,10 +145,10 @@ CHANNEL_LAYERS = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = 'jjurijn1961@gmail.com'  #'jurij_n@meta.ua'
+DEFAULT_FROM_EMAIL = 'jurijn1961@gmail.com'  #'jurij_n@meta.ua'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'  #'smtp.meta.ua'
-EMAIL_HOST_USER = 'jn1961@gmail.com' # 'jurij_n@meta.uajuri'
+EMAIL_HOST_USER = 'jurijn1961@gmail.com' # 'jurij_n@meta.ua'
 EMAIL_HOST_PASSWORD = 'JuriJ&NataliA61'
 EMAIL_PORT = 587 # 465
 
