@@ -18,23 +18,25 @@
                              xhr.setRequestHeader("X-CSRFToken", csrft);
                          }
                      }
-                 });          
+                 });
+             data = {"IP":"0.0.0.0"}
              if (window.location.protocol == "http:") {
-                     
-                 
+
+
                  data = {"IP":IP}
-                 jQuery.post("/chat/",data, function(response){
-                         
-                      });
+
             };
+            jQuery.post("/chat/",data, function(response){
+
+                      });
             var msgArea = $('#msgArea')
             var elementMessage = $('#message')
             if (window.location.protocol == "https:") {
-//               var webSocket = new WebSocket('wss://' + window.location.host + '/chat'); 
+//               var webSocket = new WebSocket('wss://' + window.location.host + '/chat');
               var webSocket = new ReconnectingWebSocket('wss://' + window.location.host + '/chat');
             } else {
               var webSocket = new ReconnectingWebSocket('ws://' + window.location.host + '/chat');
-            };            
+            };
 
             webSocket.onmessage = function(message) {
                 var data = JSON.parse(message.data)
@@ -68,7 +70,7 @@
 <div>
     <textarea style=" width:80%; vertical-align:bottom" name="message" id="message"  rows="2"></textarea>
     <button id="btnSend">Send</button>
-    <!--     {% if log %} 
+    <!--     {% if log %}
       <button id="btnSend">Send</button>
     {% else %}
       <p> Only logged users can send messages </p>

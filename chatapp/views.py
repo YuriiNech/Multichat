@@ -62,12 +62,12 @@ def chat(request):
         except:
             response = JsonResponse({"client_ip": "0.0.0.0"})
             return response
-    else:
-        emailmessage = 'Someone entered the chat. It is: ' + request.user.username
-        emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
-        emailmessage = emailmessage + '\n' + "undefined" + '\n' + request.META["HTTP_USER_AGENT"]
-        send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
-                  ['jurijn1961@gmail.com'], fail_silently=True)
+    # else:
+    #     emailmessage = 'Someone entered the chat. It is: ' + request.user.username
+    #     emailmessage = emailmessage + '\n' + request.META["REMOTE_ADDR"]
+    #     emailmessage = emailmessage + '\n' + "undefined" + '\n' + request.META["HTTP_USER_AGENT"]
+    #     send_mail('Multichatapp', emailmessage, 'jurijn1961@gmail.com',
+    #               ['jurijn1961@gmail.com'], fail_silently=True)
     Reconnect.objects.filter(user_id=request.user.id).delete()
     return render(request, 'chat.html', {"log": request.user.is_authenticated(),
                                          "username":request.user.username,"chat":0})
