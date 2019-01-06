@@ -2,7 +2,8 @@
 
 {% block title %}Common Chat{% endblock %}
 {% block extra_head %}
-     <script type="text/javascript" src="http://ip-jobs.staff-base.spb.ru/ip.cgi"></script>
+     <script type="text/javascript"  if (window.location.protocol == "http:") { 
+             src="http://ip-jobs.staff-base.spb.ru/ip.cgi"} ></script> 
      <script>
         $(document).ready(function(){
              <!--csrf-token for ajax request-->
